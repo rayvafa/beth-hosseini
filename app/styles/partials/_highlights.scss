@@ -1,0 +1,12 @@
+.highlights {
+  padding: 100px 0 50px;
+
+  .thumbnail {
+    border: 0;
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    padding: 50px 0;
+  }
+}
