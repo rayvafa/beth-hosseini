@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: rgba(0,0,0,0.7);
+
+  .text-muted {
+    margin: 0;
+    line-height: 40px;
+    color: white;
+  }
+}
+
+.nav.nav-pills {
+
+  li a {
+    background-color: transparent;
+
+    &:focus,
+    &:active,
+    &:visited,
+    &:hover {
+      color: white;
+      background-color: rgb(0,0,0);
+    }
+  }
+}
