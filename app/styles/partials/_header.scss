@@ -2,27 +2,37 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 15px 0;
-  background-color: rgba(0,0,0,0.7);
+  color: white;
+  background-color: rgba(21,31,48,.85);
+  z-index: 1;
 
-  .text-muted {
-    margin: 0;
-    line-height: 40px;
-    color: white;
+  .navbar-brand {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 15px;
+  }
+
+  .navbar-header {
+    .icon-bar {
+      background-color: white;
+    }
   }
 }
 
-.nav.nav-pills {
+.nav.navbar-nav {
 
   li a {
-    background-color: transparent;
+    color: white;
 
-    &:focus,
-    &:active,
-    &:visited,
     &:hover {
-      color: white;
-      background-color: rgb(0,0,0);
+      color: black;
     }
   }
+}
+
+.navbar {
+  margin: 0;
+  border: 0;
 }
