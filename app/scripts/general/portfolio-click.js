@@ -18,5 +18,12 @@ $(".portfolio-item").click(function() {
     $('.portfolio-modal .modal-footer p').html('');
   }
 
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'portfolio',
+    eventAction: 'click',
+    eventLabel: imageTitle
+  });
+
   $('#portfolio-modal').modal('show')
 });

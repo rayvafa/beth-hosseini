@@ -10,6 +10,16 @@
   m.parentNode.insertBefore(a, m)
 })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 ga('create', 'UA-72036926-1', 'auto');
-ga('send', 'pageview');
+//ga('send', 'pageview');
 
-console.log("Analytics fired!");
+$(".featured-work").click(function() {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'featured-work-button',
+    eventAction: 'click',
+    eventLabel: 'Featured Work'
+  });
+});
+
+
+console.log("Analytics set!");
