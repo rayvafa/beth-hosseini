@@ -3,4 +3,6 @@ $.getScript("scripts/general/analytics.js", function(){
   console.log("Analytics loaded!");
 });
 
-console.log('\'Allo \'Allo!');
+$.getScript("scripts/general/portfolio-click.js", function(){
+  console.log("portfolio-click loaded!");
+});

@@ -21,3 +21,17 @@
     }
   }
 }
+
+.portfolio-modal {
+
+  .modal-body {
+    img {
+      width: 100%;
+    }
+  }
+
+  .modal-footer {
+    border-top: 0;
+    text-align: center;
+  }
+}
