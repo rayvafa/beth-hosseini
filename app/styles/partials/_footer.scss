@@ -1,7 +1,6 @@
 .footer {
   padding: 100px 0;
-  background: url(../images/footer-background.jpg) fixed center center;
-  background-size: cover;
+  background: linear-gradient(135deg, #ca2091 0, #a041fa 20%, #3f65fb 50%, #0fcbfa 80%, #0fe6fa 100%);
   color: white;
 
   h3 {
@@ -15,13 +14,11 @@
   .lets-talk {
     font-size: 20px;
     line-height: 35px;
-    color: #7f7f7f;
   }
 
   address {
     font-size: 20px;
     line-height: 35px;
-    color: #7f7f7f;
 
     .glyphicon {
       margin-right: 10px;
@@ -29,8 +26,6 @@
   }
 
   .copyright {
-    color: #c9c9c9;
-
     .heart {
       color: #ff415c;
       font-size: 17px;
@@ -51,7 +46,7 @@
 
   a {
     display: inline-block;
-    color: white;
+
     width: 100%;
     height: 100%;
 
@@ -78,8 +73,8 @@
   }
 
   .footer__social-email {
-    background-color: #3dc9b3;
-    font-size: 25px;
+    color: white;
+    font-size: 36px;
 
     .glyphicon {
       top: 25%;
