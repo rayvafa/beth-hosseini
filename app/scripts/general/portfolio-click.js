@@ -2,10 +2,12 @@ console.log("Portfolio click init!");
 
 $(".portfolio-item").click(function() {
 
-  var clickedImage = $(this).find("img");
-  var imageUrl = clickedImage.attr('src');
-  var imageTitle = clickedImage.attr('alt');
-  var imageText = clickedImage.attr('data-text');
+  var $imageDiv = $(this);
+  var imageDivStyle = $imageDiv[0].currentStyle || window.getComputedStyle($imageDiv[0], false);
+  var imageUrl = imageDivStyle.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+  var imageTitle = $imageDiv.attr('data-headline');
+  var imageText = $imageDiv.attr('data-text');
   $('.portfolio-modal .modal-body img').attr('src', imageUrl);
   if(imageTitle) {
     $('.portfolio-modal .modal-title').html(imageTitle);
