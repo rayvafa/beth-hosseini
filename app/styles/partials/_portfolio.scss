@@ -17,6 +17,11 @@
       height: 350px;
       background-size: 100% auto;
     }
+
+    &:hover {
+      box-shadow: 0 0 10px #444;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -52,7 +57,7 @@
   }
   .portfolio-item-6 {
     background-image: url('../images/portfolio/PBI-LOGO.png');
-    background-size: 100% auto;
+    background-size: 70% auto;
     background-position: center;
   }
 }
